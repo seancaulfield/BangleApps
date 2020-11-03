@@ -61,7 +61,7 @@ function drawSimpleClock() {
   g.drawString(`${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`, xyCenter, yposDate, true);
 
   // Timestamp
-  var tst = Math.round(d.getTime());
+  var tst = Math.round(d.getTime()/1000.0);
   g.setFont(font, smallFontSize);
   g.drawString(`tst:${tst}`, xyCenter, yposTst, true);
 
